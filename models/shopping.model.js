@@ -34,6 +34,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       enum: ["Men", "Women", "Kid"],
     },
+    productQuantity: Number,
   },
   {
     timestamps: true,
