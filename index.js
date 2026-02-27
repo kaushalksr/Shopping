@@ -3,8 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const corsOptions = {
-  origin: "https://shopping-frontend-8c7x.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: "*",
   credentials: true,
 };
 
@@ -113,7 +112,9 @@ app.get("/api/categories/:category", async (req, res) => {
   }
 });
 
-PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
-});
+// PORT = 3000;
+// app.listen(PORT, () => {
+//   console.log(`Server running on ${PORT}`);
+// });
+
+module.exports = app;
