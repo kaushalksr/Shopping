@@ -1,11 +1,13 @@
 const { initializeDatabase } = require("./db/db.connect");
 const express = require("express");
 const cors = require("cors");
+const app = express();
 const corsOptions = {
-  origin: "*",
+  origin: "https://shopping-frontend-8c7x.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
-const app = express();
+
 app.use(cors(corsOptions));
 app.use(express.json());
 
