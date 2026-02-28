@@ -60,7 +60,7 @@ app.get("/api/products", async (req, res) => {
       res.status(404).json({ message: "Failed to fetch  Products!" });
     }
   } catch (error) {
-    res.status(500).json({ error: "Error ocurred while fetching Product!" });
+    res.status(500).json({ error: "Error ocurred while fetching Products!" });
   }
 });
 
