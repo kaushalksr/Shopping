@@ -2,12 +2,17 @@ const { initializeDatabase } = require("./db/db.connect");
 const express = require("express");
 const cors = require("cors");
 
-const corsOptions = {
-  origin: "*",
-  credentials: true,
-};
 const app = express();
-app.use(cors(corsOptions));
+// ------------- CORS ----------
+
+app.use(
+  cors({
+    origin: "https://shopping-frontend-zo5p-pdzwvci48.vercel.app",
+    credentials: true,
+  }),
+);
+
+// ---------- CORS -----------
 app.use(express.json());
 
 const Product = require("./models/shopping.model");
