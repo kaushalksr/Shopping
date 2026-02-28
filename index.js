@@ -12,7 +12,7 @@ app.use(express.json());
 
 const Product = require("./models/shopping.model");
 
-initializeDatabase();
+await initializeDatabase();
 
 // TO ADD PRODUCT
 
