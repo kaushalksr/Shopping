@@ -116,9 +116,9 @@ app.get("/api/categories/:category", async (req, res) => {
 
 
 
-PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
-});
+// PORT = 3000;
+// app.listen(PORT, () => {
+//   console.log(`Server running on ${PORT}`);
+// });
 
 module.exports = app;
