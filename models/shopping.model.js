@@ -32,7 +32,7 @@ const productSchema = new mongoose.Schema(
     },
     productCategory: {
       type: String,
-      enum: ["Men", "Women", "Kid"],
+      enum: ["Men", "Women", "Kid", "New", "Trending"],
     },
     productQuantity: Number,
   },
